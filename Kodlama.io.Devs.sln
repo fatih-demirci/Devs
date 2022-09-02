@@ -23,15 +23,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{5930F096-7079-487F-A270-76D6988BE063}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs.Application", "src\projects\kodlama.io\Core\Devs.Application\Devs.Application.csproj", "{627E5DEE-ECBA-48CA-803C-F1617C0C08F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devs.Application", "src\projects\kodlama.io\Core\Devs.Application\Devs.Application.csproj", "{627E5DEE-ECBA-48CA-803C-F1617C0C08F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs.Domain", "src\projects\kodlama.io\Core\Devs.Domain\Devs.Domain.csproj", "{C6C66DDC-F589-4E03-95BB-BC7239783A01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devs.Domain", "src\projects\kodlama.io\Core\Devs.Domain\Devs.Domain.csproj", "{C6C66DDC-F589-4E03-95BB-BC7239783A01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs.Infrastructure", "src\projects\kodlama.io\Infrastructure\Infrastructure\Devs.Infrastructure.csproj", "{F3949DFA-1D62-441A-BB32-D723D14DDC90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devs.Persistence", "src\projects\kodlama.io\Infrastructure\Devs.Persistence\Devs.Persistence.csproj", "{7F1382D3-A82C-4566-856D-8C08CE7CE0C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs.Persistence", "src\projects\kodlama.io\Infrastructure\Devs.Persistence\Devs.Persistence.csproj", "{7F1382D3-A82C-4566-856D-8C08CE7CE0C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devs.WebAPI", "src\projects\kodlama.io\Presentation\Devs.WebAPI\Devs.WebAPI.csproj", "{EF5ECD18-179D-437E-882F-8A3439A1515B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs.WebAPI", "src\projects\kodlama.io\Presentation\Devs.WebAPI\Devs.WebAPI.csproj", "{EF5ECD18-179D-437E-882F-8A3439A1515B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs.Infrastructure", "src\projects\kodlama.io\Infrastructure\Devs.Infrastructure\Devs.Infrastructure.csproj", "{EAFB3343-0556-435A-AF01-AEBCDAD04C5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,10 +59,6 @@ Global
 		{C6C66DDC-F589-4E03-95BB-BC7239783A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6C66DDC-F589-4E03-95BB-BC7239783A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6C66DDC-F589-4E03-95BB-BC7239783A01}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F3949DFA-1D62-441A-BB32-D723D14DDC90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3949DFA-1D62-441A-BB32-D723D14DDC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3949DFA-1D62-441A-BB32-D723D14DDC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3949DFA-1D62-441A-BB32-D723D14DDC90}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F1382D3-A82C-4566-856D-8C08CE7CE0C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7F1382D3-A82C-4566-856D-8C08CE7CE0C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F1382D3-A82C-4566-856D-8C08CE7CE0C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -71,6 +67,10 @@ Global
 		{EF5ECD18-179D-437E-882F-8A3439A1515B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF5ECD18-179D-437E-882F-8A3439A1515B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF5ECD18-179D-437E-882F-8A3439A1515B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAFB3343-0556-435A-AF01-AEBCDAD04C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFB3343-0556-435A-AF01-AEBCDAD04C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFB3343-0556-435A-AF01-AEBCDAD04C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFB3343-0556-435A-AF01-AEBCDAD04C5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,9 +87,9 @@ Global
 		{5930F096-7079-487F-A270-76D6988BE063} = {F2A045D7-3A02-48BE-A4BA-9B2CFAC6BB54}
 		{627E5DEE-ECBA-48CA-803C-F1617C0C08F5} = {5E804FED-A015-4D6C-988E-29B02032712F}
 		{C6C66DDC-F589-4E03-95BB-BC7239783A01} = {5E804FED-A015-4D6C-988E-29B02032712F}
-		{F3949DFA-1D62-441A-BB32-D723D14DDC90} = {46AD5C4E-C6A7-4826-BD3A-FE5C4294488E}
 		{7F1382D3-A82C-4566-856D-8C08CE7CE0C7} = {46AD5C4E-C6A7-4826-BD3A-FE5C4294488E}
 		{EF5ECD18-179D-437E-882F-8A3439A1515B} = {5930F096-7079-487F-A270-76D6988BE063}
+		{EAFB3343-0556-435A-AF01-AEBCDAD04C5B} = {46AD5C4E-C6A7-4826-BD3A-FE5C4294488E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA7DB62F-5CAA-45B7-BF9C-726C3321D5F6}
