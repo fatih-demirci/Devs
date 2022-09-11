@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Core.Persistence.Paging;
-using Devs.Application.Features.DTOs;
-using Devs.Application.Features.Models;
+using Devs.Application.Features.ProgrammingLanguages.DTOs;
+using Devs.Application.Features.ProgrammingLanguages.Models;
 using Devs.Application.Features.ProgrammingLanguages.Commands.Create.CreateProgrammingLanguage;
 using Devs.Application.Features.ProgrammingLanguages.Commands.Delete.DeleteProgrammingLanguage;
 using Devs.Application.Features.ProgrammingLanguages.Commands.Update.UpdateProgrammingLanguage;

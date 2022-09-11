@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Core.Persistence.Paging;
-using Devs.Application.Features.Models;
+using Devs.Application.Features.ProgrammingLanguages.Models;
 using Devs.Application.Services.Repositories;
 using Devs.Domain.Entities;
 using MediatR;

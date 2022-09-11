@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Devs.Application.Features.DTOs;
+using Devs.Application.Features.ProgrammingLanguages.DTOs;
 using Devs.Application.Features.ProgrammingLanguages.Rules;
 using Devs.Application.Services.Repositories;
 using Devs.Domain.Entities;
