@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Core.Security\Core.Security.csproj" />
+    <ProjectReference Include="..\..\..\..\corePackages\Core.Security\Core.Security.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Devs.Persistence\Devs.Persistence.csproj" />
   </ItemGroup>
 
