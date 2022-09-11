@@ -33,7 +33,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devs.WebAPI", "src\projects
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devs.Infrastructure", "src\projects\kodlama.io\Infrastructure\Devs.Infrastructure\Devs.Infrastructure.csproj", "{EAFB3343-0556-435A-AF01-AEBCDAD04C5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Security", "Core.Security\Core.Security.csproj", "{F92125AB-E43C-4AB1-9F54-AD948E9AA461}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Security", "src\corePackages\Core.Security\Core.Security.csproj", "{A81EAA98-9072-4D62-B7EE-B60205AEC47A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,10 +73,10 @@ Global
 		{EAFB3343-0556-435A-AF01-AEBCDAD04C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAFB3343-0556-435A-AF01-AEBCDAD04C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAFB3343-0556-435A-AF01-AEBCDAD04C5B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F92125AB-E43C-4AB1-9F54-AD948E9AA461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F92125AB-E43C-4AB1-9F54-AD948E9AA461}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F92125AB-E43C-4AB1-9F54-AD948E9AA461}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F92125AB-E43C-4AB1-9F54-AD948E9AA461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A81EAA98-9072-4D62-B7EE-B60205AEC47A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81EAA98-9072-4D62-B7EE-B60205AEC47A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81EAA98-9072-4D62-B7EE-B60205AEC47A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81EAA98-9072-4D62-B7EE-B60205AEC47A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,7 +96,7 @@ Global
 		{7F1382D3-A82C-4566-856D-8C08CE7CE0C7} = {46AD5C4E-C6A7-4826-BD3A-FE5C4294488E}
 		{EF5ECD18-179D-437E-882F-8A3439A1515B} = {5930F096-7079-487F-A270-76D6988BE063}
 		{EAFB3343-0556-435A-AF01-AEBCDAD04C5B} = {46AD5C4E-C6A7-4826-BD3A-FE5C4294488E}
-		{F92125AB-E43C-4AB1-9F54-AD948E9AA461} = {8214BC08-612E-4320-9C75-9D340D9AE467}
+		{A81EAA98-9072-4D62-B7EE-B60205AEC47A} = {8214BC08-612E-4320-9C75-9D340D9AE467}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA7DB62F-5CAA-45B7-BF9C-726C3321D5F6}
