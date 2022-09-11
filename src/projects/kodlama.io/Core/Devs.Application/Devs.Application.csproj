@@ -22,4 +22,11 @@
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Auth\Models\" />
+    <Folder Include="Features\Auth\Profiles\" />
+    <Folder Include="Features\Developers\Models\" />
+    <Folder Include="Features\Developers\Queries\" />
+  </ItemGroup>
+
 </Project>

@@ -20,6 +20,10 @@ namespace Devs.Persistence
             services.AddDbContext<DevsWriteContext>(options => options.UseSqlServer(configuration.GetConnectionString("DevsWriteConnectionString")));
             services.AddDbContext<DevsReadContext>(options => options.UseSqlServer(configuration.GetConnectionString("DevsReadConnectionString")));
             services.AddScoped<IProgrammingLanguageRepository, ProgrammingLanguageRepository>();
+            services.AddScoped<IProgrammingLanguageTechnologyRepository, ProgrammingLanguageTechnologyRepository>();
+            services.AddScoped<IDeveloperRepository, DeveloperRepository>();
+            services.AddScoped<IUserOperationClaimRepository, UserOperationClaimRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             return services;
         }
     }
