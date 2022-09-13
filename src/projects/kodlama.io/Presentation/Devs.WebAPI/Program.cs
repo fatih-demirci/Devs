@@ -1,3 +1,4 @@
+using Core.CrossCuttingConcerns.Exceptions;
 using Core.Security;
 using Core.Security.Encryption;
 using Core.Security.JWT;
@@ -72,6 +73,8 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 //}
+
+app.ConfigureCustomExceptionMiddleware();
 
 app.UseHttpsRedirection();
 
