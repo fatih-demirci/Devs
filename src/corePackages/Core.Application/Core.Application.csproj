@@ -9,6 +9,12 @@
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.2.2" />
     <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.CrossCuttingConcerns\Core.CrossCuttingConcerns.csproj" />
+    <ProjectReference Include="..\Core.Security\Core.Security.csproj" />
   </ItemGroup>
 
 </Project>

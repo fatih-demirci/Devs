@@ -1,4 +1,5 @@
-﻿using Core.Application.Pipelines.Validation;
+﻿using Core.Application.Pipelines.Authorization;
+using Core.Application.Pipelines.Validation;
 using Devs.Application.Features.Auth.Rules;
 using Devs.Application.Features.Developers.Rules;
 using Devs.Application.Features.ProgrammingLanguages.Rules;
@@ -29,6 +30,7 @@ namespace Devs.Application
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
 
             return services;
         }
