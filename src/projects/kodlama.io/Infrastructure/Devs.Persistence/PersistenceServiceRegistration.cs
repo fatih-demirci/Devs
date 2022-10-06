@@ -24,6 +24,8 @@ namespace Devs.Persistence
             services.AddScoped<IDeveloperRepository, DeveloperRepository>();
             services.AddScoped<IUserOperationClaimRepository, UserOperationClaimRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
+
             return services;
         }
     }

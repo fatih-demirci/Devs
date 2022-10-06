@@ -3,8 +3,9 @@ using Core.Security.DTOs;
 using Core.Security.Entities;
 using Core.Security.Hashing;
 using Core.Security.JWT;
-using Devs.Application.Features.Auth.DTOs;
-using Devs.Application.Features.Auth.Rules;
+using Devs.Application.Features.Auths.DTOs;
+using Devs.Application.Features.Auths.Rules;
+using Devs.Application.Services.AuthServices;
 using Devs.Application.Services.Repositories;
 using MediatR;
 using System;
@@ -13,31 +14,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Devs.Application.Features.Auth.Queries.Login
+namespace Devs.Application.Features.Auths.Queries.Login
 {
     public class LoginQueryHandler : IRequestHandler<LoginQueryRequest, LoginResponseDTO>
     {
         IUserRepository _userRepository;
         AuthBusinessRules _authBusinessRules;
-        ITokenHelper _tokenHelper;
+        IAuthService _authService;
 
         public LoginQueryHandler
             (
             IUserRepository userRepository,
             AuthBusinessRules authBusinessRules,
-            ITokenHelper tokenHelper
+            IAuthService authService
             )
         {
             _userRepository = userRepository;
             _authBusinessRules = authBusinessRules;
-            _tokenHelper = tokenHelper;
+            _authService = authService;
         }
 
         public async Task<LoginResponseDTO> Handle(LoginQueryRequest request, CancellationToken cancellationToken)
         {
             User user = await _authBusinessRules.VerifyPassword(request.Email, request.Password);
-            AccessToken accessToken = _tokenHelper.CreateToken(user, await _userRepository.GetOperationClaimsAsync(user.Id));
-            LoginResponseDTO loginResponseDTO = new() { AccessToken = accessToken };
+            AccessToken accessToken = await _authService.CreateAccessToken(user);
+            RefreshToken refreshToken = await _authService.CreateRefreshToken(user, request.IpAddress);
+            LoginResponseDTO loginResponseDTO = new() { AccessToken = accessToken, RefreshToken = refreshToken };
             return loginResponseDTO;
         }
 

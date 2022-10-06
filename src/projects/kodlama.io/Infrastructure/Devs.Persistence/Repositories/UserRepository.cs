@@ -18,19 +18,5 @@ namespace Devs.Persistence.Repositories
         {
 
         }
-
-        public async Task<IList<OperationClaim>> GetOperationClaimsAsync(int userId)
-        {
-            var result = from operationClaim in ReadContext.OperationClaims
-                         join userOperationClaim in ReadContext.UserOperationClaims
-                         on operationClaim.Id equals userOperationClaim.OperationClaimId
-                         where userOperationClaim.UserId == userId
-                         select new OperationClaim()
-                         {
-                             Id = operationClaim.Id,
-                             Name = operationClaim.Name,
-                         };
-            return await result.ToListAsync();
-        }
     }
 }

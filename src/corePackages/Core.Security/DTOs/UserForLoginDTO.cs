@@ -11,5 +11,6 @@ namespace Core.Security.DTOs
         public string Email { get; set; }
         public string Password { get; set; }
         public string? AuthenticatorCode { get; set; }
+        public string? IpAddress { get; set; }
     }
 }

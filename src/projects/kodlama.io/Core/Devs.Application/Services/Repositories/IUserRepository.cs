@@ -10,6 +10,6 @@ namespace Devs.Application.Services.Repositories
 {
     public interface IUserRepository : IWriteRepository<User>, IReadRepository<User>
     {
-        Task<IList<OperationClaim>> GetOperationClaimsAsync(int userId);
+
     }
 }

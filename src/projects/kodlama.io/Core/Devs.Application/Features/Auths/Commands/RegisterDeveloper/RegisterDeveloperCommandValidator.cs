@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Devs.Application.Features.Auth.Commands.RegisterDeveloper
+namespace Devs.Application.Features.Auths.Commands.RegisterDeveloper
 {
     public class RegisterDeveloperCommandValidator : AbstractValidator<RegisterDeveloperCommandRequest>
     {
