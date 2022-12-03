@@ -26,7 +26,7 @@ COPY src/corePackages/Core.Security/. ./src/corePackages/Core.Security/
 COPY src/projects/kodlama.io/Core/Devs.Application/. ./src/projects/kodlama.io/Core/Devs.Application/
 COPY src/projects/kodlama.io/Core/Devs.Domain/. ./src/projects/kodlama.io/Core/Devs.Domain/
 COPY src/projects/kodlama.io/Infrastructure/Devs.Infrastructure/. ./src/projects/kodlama.io/Infrastructure/Devs.Infrastructure/
-COPY src/projects/kodlama.io/Infrastructure/Devs.Persistence/. ./src/projects/kodlama.io/Core/Devs.Persistence/
+COPY src/projects/kodlama.io/Infrastructure/Devs.Persistence/. ./src/projects/kodlama.io/Infrastructure/Devs.Persistence/
 COPY src/projects/kodlama.io/Presentation/Devs.WebAPI/. ./src/projects/kodlama.io/Presentation/Devs.WebAPI/
 WORKDIR /source/src/projects/kodlama.io/Presentation/Devs.WebAPI
 RUN dotnet publish -c release -o /app --no-restore
