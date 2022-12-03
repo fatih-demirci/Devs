@@ -12,7 +12,7 @@ COPY src/corePackages/Core.Security/*.csproj ./src/corePackages/Core.Security/
 COPY src/projects/kodlama.io/Core/Devs.Application/*.csproj ./src/projects/kodlama.io/Core/Devs.Application/
 COPY src/projects/kodlama.io/Core/Devs.Domain/*.csproj ./src/projects/kodlama.io/Core/Devs.Domain/
 COPY src/projects/kodlama.io/Infrastructure/Devs.Infrastructure/*.csproj ./src/projects/kodlama.io/Infrastructure/Devs.Infrastructure/
-COPY src/projects/kodlama.io/Infrastructure/Devs.Persistence/*.csproj ./src/projects/kodlama.io/Core/Devs.Persistence/
+COPY src/projects/kodlama.io/Infrastructure/Devs.Persistence/*.csproj ./src/projects/kodlama.io/Infrastructure/Devs.Persistence/
 COPY src/projects/kodlama.io/Presentation/Devs.WebAPI/*.csproj ./src/projects/kodlama.io/Presentation/Devs.WebAPI/
 
 RUN dotnet restore
